@@ -13,6 +13,17 @@ This is my repo for STATS 220.
 2. Understand R better. *(Lowkey I find it hard but I'm gonna get through it!)*
 3. Survive and have fun.
 
+### Words to describe me feelings this semester
+- Excited
+- Good
+- It is what it is *(Not a word but okay I guess)*
+
+[Stream my fav BTS's song](https://youtu.be/xEeFrLSkMm8?si=t5dZXjSsOCLI_WPc)
+
+[For eargasm](https://youtu.be/BS7tz2rAOSA?si=ctcgj2wlli15GZlL)
+
+You after listening to my song recommendations:
+![](https://media.tenor.com/hQL9U7f1PyAAAAAM/carolinekwan-caroline-kwan-is-live.gif)
 
 
 
