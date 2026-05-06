@@ -1,0 +1,90 @@
+---
+title: "Understanding My Procrastination Habits"
+output: html_document
+---
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+```
+
+```{js}
+$(function() {
+  $(".level2").css('visibility', 'hidden');
+  $(".level2").first().css('visibility', 'visible');
+  $(".container-fluid").height($(".container-fluid").height() + 300);
+  $(window).on('scroll', function() {
+    $('h2').each(function() {
+      var h2Top = $(this).offset().top - $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (h2Top >= 0 && h2Top <= windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'visible');
+      } else if (h2Top > windowHeight / 2) {
+        $(this).parent('div').css('visibility', 'hidden');
+      }
+    });
+  });
+})
+```
+
+```{css, echo=FALSE}
+.figcaption {display: none}
+
+
+body {
+  background-color: #f8f5f2;
+  color: #264653;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #264653;
+}
+
+section.level2 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.level2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+```
+
+
+
+Procrastination is something many students experience, especially when dealing with stressful or time-consuming tasks. For this project, I collected observational data about my own procrastination episodes to better understand the situations where procrastination happens most often.
+
+The data was collected using a Google Form where I logged each procrastination episode, including the task I avoided, time of day of when I procrastinated, the activity I did instead, stress level, and the duration of procrastination.
+
+
+## How Long I Procrastinate
+
+This visualisation shows the distribution of procrastination duration in minutes. Most procrastination episodes lasted for shorter periods, although there were several longer episodes that suggest stronger avoidance behaviour.
+
+![Histogram showing the distribution of procrastination duration in minutes. Most observations are concentrated between shorter to medium durations.](plot1.png)
+
+## What I Do Instead of My Tasks
+
+This plot shows the activities I most commonly do when procrastinating. Social media was the most frequent distraction, followed by talking to others and watching videos. In comparison, sleeping or resting happened less often, while other activities were only recorded a few times.
+
+![Bar chart comparing different distraction activities during procrastination episodes. Social media has the highest frequency among all distraction categories.](plot2.png)
+
+## Procrastination Across Different Days
+
+This plot shows how my procrastination episodes changed across different days of the week. Monday had the lowest number of episodes, while Tuesday and Thursday showed much higher counts. This suggests that procrastination became more common during busier parts of the week when academic tasks and stress may have increased.
+
+![Line graph showing the number of procrastination episodes across different days of the week. Some days show noticeably higher counts than others.](plot3.png)
+
+## Conclusion
+
+Overall, the data suggests that procrastination is strongly linked to digital distractions and tends to occur during periods of stress or academic workload. By collecting and analysing this data, I was able to better understand my own procrastination patterns and identify behaviours that contribute most to delaying tasks.
+
+
+
+
+
+
